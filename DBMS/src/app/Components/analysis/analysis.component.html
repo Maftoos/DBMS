@@ -1,0 +1,86 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6">
+        </div>
+        <div class="col-2">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  CPU
+                </label>
+              </div>
+        </div>
+        <div class="col-2">
+            <input type="date" id="datepicker" class="form-control" value="2023-01-01">
+        </div>
+        <div class="col-2">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Last 24 Hours</option>
+                <option value="1">Last Week</option>
+                <option value="2">Last Month</option>
+            </select>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-12">
+            <p-chart type="line" [data]="FirstChartData" [options]="FirstChartOptions" height="400"></p-chart>
+        </div>
+        <div class="col-6">
+            <p-chart type="line" [data]="SecondChartData" [options]="FirstChartOptions"></p-chart>
+        </div>
+        <div class="col-6">
+            <p-chart type="line" [data]="SecondChartData" [options]="FirstChartOptions"></p-chart>
+        </div>
+        <div class="col-6">
+            <p-chart type="line" [data]="SecondChartData" [options]="FirstChartOptions"></p-chart>
+        </div>
+        <div class="col-6">
+            <p-chart type="line" [data]="SecondChartData" [options]="FirstChartOptions"></p-chart>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                  <tr class="table-secondary">
+                    <th scope="col">Query Test</th>
+                    <th scope="col">Execution</th>
+                    <th scope="col">Duration (ms)</th>
+                    <th scope="col">CPU time (ms)</th>
+                    <th scope="col">Physical reads</th>
+                    <th scope="col">Logical reads</th>
+                    <th scope="col">Logical writes</th>
+                    <th scope="col">Database</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">SELECT TOP (1200000) * INTO #votes FROM ( SELECT TOP (120000000)</td>
+                    <td>8</td>
+                    <td>134,910</td>
+                    <td>51,540</td>
+                    <td>51,540</td>
+                    <td>51,540</td>
+                    <td>51,540</td>
+                    <td>StackOverflow2013</td>
+                    
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+

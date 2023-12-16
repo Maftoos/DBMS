@@ -5,6 +5,8 @@ import { LoginPageComponent } from './Components/login-page/login-page.component
 import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { OverviewComponent } from './Components/overview/overview.component';
+import { AnalysisComponent } from './Components/analysis/analysis.component';
+import { ManagementComponent } from './Components/management/management.component';
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -15,7 +17,11 @@ import { OverviewComponent } from './Components/overview/overview.component';
               LoginPageComponent,
               SidebarComponent,
               OverviewComponent,
-              NavbarComponent]
+              NavbarComponent,
+              AnalysisComponent,
+              ManagementComponent
+             ]
+    
 })
 export class AppComponent {
   title = 'DBMS';

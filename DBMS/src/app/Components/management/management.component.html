@@ -1,0 +1,78 @@
+<div class="container-fluid">
+    <div class="row m-2 p-3">
+        <span style="font-weight: bold; font-size: 20px;">User management</span>
+    </div>
+    
+            <div style="background-color: #9B9B9BC9;" class="row m-2 p-4">
+                <div class="col-4">
+                    User / Group
+                </div>
+                <div class="col-5">
+                    Role
+                </div>
+                <div class="col-3">
+                    Action
+                </div>
+            </div>
+            <div style="border-bottom: 1px solid black;" class="row m-3" *ngFor="let user of users">
+                <div class="col-4">
+                    {{user.name}}
+                </div>
+                <div class="col-4">
+                    {{user.role}}
+                </div>
+                <div class="col-3">
+                    <button style="margin-left: 6rem;" type="button" class="btn mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <img src="./assets/info-icon.png" alt="Image">
+                    </button>
+                    <button type="button" class="btn mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <img src="./assets/edit-icon.png" alt="Image">
+                    </button>
+                    <button type="button" class="btn mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <img src="./assets/delete-icon.png" alt="Image">
+                    </button>
+                </div>
+            </div>
+            </div>
+<!-- modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Role Info</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row m-4">
+            <div class="col-2">
+                User Name :
+            </div>
+            <div class="col-10">
+                Henry
+            </div>
+            <div class="col-2">
+                Role :
+            </div>
+            <div class="col-10">
+                Admin
+            </div>
+            <div class="col-2">
+                Permissions :
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Default checkbox
+                    </label>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button style="background-color: #28C76F;" class="btn btn-success" data-bs-dismiss="modal">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
