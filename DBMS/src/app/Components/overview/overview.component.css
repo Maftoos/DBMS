@@ -1,0 +1,46 @@
+.btn-group .btn {
+    transition: background-color 0.3s;
+  }
+  
+  .btn-group .btn:focus,
+  .btn-group .btn:active,
+  .btn-group .btn-success {
+    background-color: #28C76F;
+    color: #fff;
+  }
+  
+  .btn-group .btn-outline-success {
+    background-color: #fff;
+    color: #28C76F;
+  }
+.alert{
+    background-color: #FFFFFF;
+}
+.serverGroup-container{
+    background-color: #FFFFFF;
+}
+.serverGroup-title{
+    font-size: large;
+    font-weight: bold;
+}
+.server-container{
+    border: 0.25px solid #B2B2B2;
+    height: 12rem;
+}
+.server-title{
+    height: 3rem;
+}
+.server-img{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 30px;
+}
+.server-name{
+    font-weight: 600;
+    font-size: 100;
+    margin-top: 10px;
+}
+.server-notification-alert{
+    background-color: #FFA825;
+    height: 3rem;
+}

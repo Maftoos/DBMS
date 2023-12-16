@@ -1,0 +1,146 @@
+<div style="background-color: #F1EEEE;" class="container-fluid">
+
+    <div class="row m-2">
+        <div class="col-3 mt-2">
+            <div>
+                <strong style="font-family: Heebo; margin-left: 20px; font-weight: 900;">14</strong>
+                <br>
+                <strong style="font-family: Heebo;">Instance</strong>
+              </div>
+        </div>
+        <div class="col-2 mt-2">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="addon-wrapping">S</span>
+                <input type="text" class="form-control" placeholder="Filter By Name" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+        </div>
+        <div class="col-2 mt-2">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>All Status</option>
+              </select>
+        </div>
+        <div class="col-2 mt-2">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>All Groups</option>
+              </select>
+        </div>
+        <div class="col-2 mt-2">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>All Base Monitors</option>
+              </select>
+        </div>
+    </div>
+    <div class="row m-2">
+        <div class="col-4">
+            <span>Group By </span>
+            <div style="border: 1px solid black;" class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn" [class.btn-success]="selectedGroup === 'server'" (click)="selectTab('server')">Server Group</button>
+                <button type="button" class="btn" [class.btn-success]="selectedGroup === 'health'" (click)="selectTab('health')">Health Status</button>
+              </div>
+        </div>
+        <div class="col-4">
+            <span>Order By </span>
+            <div style="border: 1px solid black;" class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn" [class.btn-success]="selectedOrder === 'name'" (click)="selectOrder('name')">Name</button>
+                <button type="button" class="btn" [class.btn-success]="selectedOrder === 'severity'" (click)="selectOrder('severity')">Severity</button>
+              </div>
+        </div>
+        <div class="col-4">
+            <button style="background-color: #28C76F; margin-left: 8rem;" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add Monitored Server</button>
+        </div>
+        <div class="col-12">
+            <hr>
+        </div>
+        <div style="padding: 5px;" class="row alert">
+            <div class="col-9">
+                <img src="./assets/danger-yellow.png">
+                7095 active alerts on the dashboard are now over a week old .
+            </div>
+            <div class="col-1">
+                <span style="color: #28C76F;">Clear all</span>
+            </div>
+            <div class="col-1">
+                <span style="color: #28C76F;">View alerts</span>
+            </div>
+            <div class="col-1">
+                <button style="margin-left: 65px; margin-top: 3px;" type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+        </div>
+        <div style="padding: 5px;" class="row alert">
+            <div class="col-8">
+                <img src="./assets/danger-blue.png">
+                You can add new database.
+            </div>
+            <div class="col-1">
+                
+            </div>
+            <div class="col-3">
+                <span style="color: #28C76F; margin-left: 105px;">Update Catalog</span>
+                <button style="margin-left: 65px; margin-top: 3px;" type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 serverGroup-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="serverGroup-title">Server</span>
+                        </div>
+                        <div class="col-12">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Production (6)
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <div class="row">
+                                        <div class="col-4">
+                                            <div class="server-container">
+                                                <div class="server-title">
+                                                    <img class="server-img" src="./assets/database-cloud.png">
+                                                    <span class="server-name">ADO1</span>
+                                                    <img style="margin-left: 14rem; margin-top: 13px;" src="./assets/three-dots.png">
+                                                </div>
+                                                <div class="server-notification-alert">
+                                                    <img class="server-img" src="./assets/alert-white.png">
+                                                    <span style="color: white; " class="server-name">Status : Warning</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            1
+                                        </div>
+                                        <div class="col-4">
+                                            1
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Update Catalog</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button style="background-color: #28C76F;" class="btn btn-success" data-bs-dismiss="modal">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>

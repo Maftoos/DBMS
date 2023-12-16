@@ -1,0 +1,20 @@
+.navbar-main{
+    background-color: #646464;
+    height: 8vh;
+}
+.navbar-logo{
+    width: 125px;
+}
+.navbar-side{
+    background-color: #9B9B9B;
+    top: 3rem;
+    height: 8vh;
+}
+.navbar-search{
+    padding: 5px;
+    width: 21vw; 
+    margin-left: 26vw;
+}
+.navbar-nav .nav-item .nav-link.active {
+    color: white;
+  }
