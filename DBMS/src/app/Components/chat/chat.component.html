@@ -1,0 +1,52 @@
+<div class="container-fluid chat-container">
+    <div class="row m-4">
+        <div class="col-3 chat-list">
+            <div class="row">
+                <div class="col-12">
+                    <button class="newChat-button m-2">+ New Chat</button>
+                </div>
+                <div class="col-12">
+                    <span style="font-weight: 600; margin: 5px; font-size: larger;">Recent</span>
+                </div>
+                <div class="col-11 mt-4 chat-bubbleLeft">
+                    <span>what are the most repeated error in mariadb?</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="row p-3 mt-2">
+                <div class="col-1">
+                    <img src="./assets/profile-man.png">
+                </div>
+                <div class="col-9">
+                    <div class="chat-bubbleLeft mb-4">
+                        <span>what are the most repeated error in mariadb</span>
+                    </div>
+                    <div class="chat-bubbleRight">
+                        <span>
+                            The most common errors in MariaDB can be categorized into the following:
+                            1. Installation and configuration errors:
+                            Incorrect installation: This could be due to missing dependencies, incorrect configuration files, or insufficient permissions.
+                            Port conflicts: MariaDB uses the default port 3306 for communication. If another application is already using this port, it will lead to conflicts and prevent MariaDB from starting.
+                            Incorrect data directory: The data directory stores all the database files. If it is not properly configured, MariaDB will not be able to access the databases.
+                            Insufficient permissions: The user that runs MariaDB needs to have the necessary permissions to access the data directory and other resources.
+                            2. Database connection errors:
+                            Incorrect username or password: This is one of the most common errors that occur when trying to connect to a MariaDB database.
+                            Database not found: The database you are trying to connect to may not exist or may be misspelled.
+                            Host not found: The hostname or IP address of the MariaDB server may be incorrect.
+                            Connection refused: The MariaDB server may be down or not listening for connections on the specified port.</span>
+                    </div>
+                    <div class="input-group mt-5">
+                        <input type="text" class="form-control chat-box" placeholder="Type your Question Here" aria-label="Username" aria-describedby="basic-addon1">
+                        <button class="btn">
+                            <img src="./assets/send-message.png">
+                        </button>
+                    </div>
+                </div>
+                <div class="col-2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

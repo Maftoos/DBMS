@@ -7,6 +7,7 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { OverviewComponent } from './Components/overview/overview.component';
 import { AnalysisComponent } from './Components/analysis/analysis.component';
 import { ManagementComponent } from './Components/management/management.component';
+import { ChatComponent } from './Components/chat/chat.component';
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -19,7 +20,8 @@ import { ManagementComponent } from './Components/management/management.componen
               OverviewComponent,
               NavbarComponent,
               AnalysisComponent,
-              ManagementComponent
+              ManagementComponent,
+              ChatComponent
              ]
     
 })
