@@ -11,6 +11,7 @@ import { ChatComponent } from './Components/chat/chat.component';
 import { ConfigurationComponent } from './Components/configuration/configuration.component';
 import { DataSettingsComponent } from './Components/data-settings/data-settings.component';
 import { HomeComponent } from './Components/home/home.component';
+import { MonitoredServersComponent } from './Components/monitored-servers/monitored-servers.component';
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -27,7 +28,8 @@ import { HomeComponent } from './Components/home/home.component';
               ChatComponent,
               ConfigurationComponent,
               DataSettingsComponent,
-              HomeComponent
+              HomeComponent,
+              MonitoredServersComponent
              ]
     
 })

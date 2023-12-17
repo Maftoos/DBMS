@@ -1,0 +1,63 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-2">
+            <button class="btn btn-primary">Add SQL Server</button>
+        </div>
+        <div class="col-2">
+            <button class="btn btn-primary">Add Amazon RDS</button>
+        </div>
+        <div class="col-2">
+            <button class="btn btn-primary">Add Azure SQL</button>
+        </div>
+        <div class="col-2">
+            <button class="btn btn-primary">Add Azure SQL Managed Instance</button>
+        </div>
+        <div class="col-2">
+            <button class="btn btn-secondary">Import SQL Server</button>
+        </div>
+        <div class="col-2">
+            <select class="form-select bg-secondary text-white" aria-label="Default select example">
+                <option selected>Select Server</option>
+              </select>
+        </div>
+    </div>
+    <div style="background-color: #9B9B9BC9;" class="row m-2 p-4">
+        <div class="col-3">
+            Server
+        </div>
+        <div class="col-2">
+            Alias
+        </div>
+        <div class="col-2">
+            Status
+        </div>
+        <div class="col-3">
+            Credentials
+        </div>
+        <div class="col-2">
+            Actions
+        </div>
+    </div>
+    <div *ngFor="let index of getLoopCount(6); let i = index" style="border-bottom: 1px solid black;" class="row m-2 p-4">
+        <div class="col-3">
+            sm-dc2
+        </div>
+        <div class="col-2">
+            Alias
+        </div>
+        <div class="col-2">
+            <div>
+                <strong>Monitoring</strong>
+            </div>
+            <div>
+                Connected
+            </div>
+        </div>
+        <div class="col-3">
+            Administrator&#64;smdemo.local
+        </div>
+        <div class="col-2">
+            Actions
+        </div>
+    </div>
+</div>
