@@ -12,6 +12,8 @@ import { ConfigurationComponent } from './Components/configuration/configuration
 import { DataSettingsComponent } from './Components/data-settings/data-settings.component';
 import { HomeComponent } from './Components/home/home.component';
 import { MonitoredServersComponent } from './Components/monitored-servers/monitored-servers.component';
+import { AlertsHomeComponent } from './Components/alerts-home/alerts-home.component';
+
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -29,7 +31,8 @@ import { MonitoredServersComponent } from './Components/monitored-servers/monito
               ConfigurationComponent,
               DataSettingsComponent,
               HomeComponent,
-              MonitoredServersComponent
+              MonitoredServersComponent,
+              AlertsHomeComponent
              ]
     
 })
