@@ -17,6 +17,7 @@ import { AlertDatabasesComponent } from './Components/alert-databases/alert-data
 import { AlertsMessagesComponent } from './Components/alerts-messages/alerts-messages.component';
 import { AlertObjectsComponent } from './Components/alert-objects/alert-objects.component';
 import { DeadlockEventComponent } from './Components/deadlock-event/deadlock-event.component';
+import { InstalledVersionsComponent } from './Components/installed-versions/installed-versions.component';
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -39,7 +40,8 @@ import { DeadlockEventComponent } from './Components/deadlock-event/deadlock-eve
               AlertDatabasesComponent,
               AlertsMessagesComponent,
               AlertObjectsComponent,
-              DeadlockEventComponent
+              DeadlockEventComponent,
+              InstalledVersionsComponent
              ]
     
 })
