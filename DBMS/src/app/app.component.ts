@@ -14,6 +14,7 @@ import { HomeComponent } from './Components/home/home.component';
 import { MonitoredServersComponent } from './Components/monitored-servers/monitored-servers.component';
 import { AlertsHomeComponent } from './Components/alerts-home/alerts-home.component';
 import { AlertDatabasesComponent } from './Components/alert-databases/alert-databases.component';
+import { AlertsMessagesComponent } from './Components/alerts-messages/alerts-messages.component';
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -33,7 +34,8 @@ import { AlertDatabasesComponent } from './Components/alert-databases/alert-data
               HomeComponent,
               MonitoredServersComponent,
               AlertsHomeComponent,
-              AlertDatabasesComponent
+              AlertDatabasesComponent,
+              AlertsMessagesComponent
              ]
     
 })
