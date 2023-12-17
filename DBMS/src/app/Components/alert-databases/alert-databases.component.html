@@ -1,0 +1,47 @@
+<div class="container-fluid mt-2">
+    <div class="row">
+        <div class="col-4">
+            <select class="form-select">
+                <option selected>Filter</option>
+                <option>All</option>
+            </select>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-secondary">Clear Filter</button>
+        </div>
+        <div class="col-3">
+            <span style="color: #374AF9;">Show Advanced Filters</span>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-2">
+            <select class="form-select">
+                <option selected>Select</option>
+            </select>
+        </div>
+    </div>
+    <div style="background-color: #9B9B9BC9;" class="row m-2 p-4">
+        <div class="col-4">
+            <span style="font-weight: bold; font-size: large;">Type</span>
+        </div>
+        <div class="col-8">
+            <span style="font-weight: bold; font-size: large;">Object</span>
+        </div>
+    </div>
+    <div *ngFor="let index of getLoopCount(6); let i = index" style="border-bottom: 1px solid black;" class="row m-2 p-4">
+        <div class="col-4">
+            
+            <div class="form-check">
+                
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Blocking Process (5,873)
+                </label>
+              </div>
+        </div>
+        <div class="col-8">
+            <img src="./assets/database-icon.png">
+            <span style="margin-left: 5px;">sqlmonitor-sqlazuredb.database.windows.net\sqlservercentral_test</span>
+        </div>
+    </div>
+</div>

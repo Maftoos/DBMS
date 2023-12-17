@@ -13,7 +13,7 @@ import { DataSettingsComponent } from './Components/data-settings/data-settings.
 import { HomeComponent } from './Components/home/home.component';
 import { MonitoredServersComponent } from './Components/monitored-servers/monitored-servers.component';
 import { AlertsHomeComponent } from './Components/alerts-home/alerts-home.component';
-
+import { AlertDatabasesComponent } from './Components/alert-databases/alert-databases.component';
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -32,7 +32,8 @@ import { AlertsHomeComponent } from './Components/alerts-home/alerts-home.compon
               DataSettingsComponent,
               HomeComponent,
               MonitoredServersComponent,
-              AlertsHomeComponent
+              AlertsHomeComponent,
+              AlertDatabasesComponent
              ]
     
 })
