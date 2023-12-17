@@ -9,6 +9,8 @@ import { AnalysisComponent } from './Components/analysis/analysis.component';
 import { ManagementComponent } from './Components/management/management.component';
 import { ChatComponent } from './Components/chat/chat.component';
 import { ConfigurationComponent } from './Components/configuration/configuration.component';
+import { DataSettingsComponent } from './Components/data-settings/data-settings.component';
+import { HomeComponent } from './Components/home/home.component';
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -24,6 +26,8 @@ import { ConfigurationComponent } from './Components/configuration/configuration
               ManagementComponent,
               ChatComponent,
               ConfigurationComponent,
+              DataSettingsComponent,
+              HomeComponent
              ]
     
 })
