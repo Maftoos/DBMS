@@ -15,6 +15,7 @@ import { MonitoredServersComponent } from './Components/monitored-servers/monito
 import { AlertsHomeComponent } from './Components/alerts-home/alerts-home.component';
 import { AlertDatabasesComponent } from './Components/alert-databases/alert-databases.component';
 import { AlertsMessagesComponent } from './Components/alerts-messages/alerts-messages.component';
+import { AlertObjectsComponent } from './Components/alert-objects/alert-objects.component';
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -35,7 +36,8 @@ import { AlertsMessagesComponent } from './Components/alerts-messages/alerts-mes
               MonitoredServersComponent,
               AlertsHomeComponent,
               AlertDatabasesComponent,
-              AlertsMessagesComponent
+              AlertsMessagesComponent,
+              AlertObjectsComponent
              ]
     
 })

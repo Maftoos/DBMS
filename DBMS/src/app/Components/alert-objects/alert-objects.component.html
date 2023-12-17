@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+        </div>
+        <div class="col-4">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    <span style="font-weight: bold; font-size: large; margin-left: 20px;">Group Alerts</span>
+                </label>
+        </div>
+    </div>
+    <div style="background-color: #9B9B9BC9;" class="row m-2 p-4">
+        <div class="col-3">
+            <span style="font-weight: bold; font-size: large;">Object</span>
+        </div>
+        <div class="col-2">
+            <span style="font-weight: bold; font-size: large;">Last Updated</span>
+        </div>
+        <div class="col-2">
+            <span style="font-weight: bold; font-size: large;">Severity</span>
+        </div>
+        <div class="col-2">
+            <span style="font-weight: bold; font-size: large;">Status</span>
+        </div>
+    </div>
+    <div *ngFor="let index of getLoopCount(6); let i = index" style="border-bottom: 1px solid black;" class="row m-2 p-4">
+        <div class="col-3">
+            <img src="./assets/database-icon.png">
+            <span style="margin-left: 10px;">test01.smdesmo.local\demo</span>
+        </div>
+        <div class="col-2">
+            <span>10:56</span>
+        </div>
+        <div class="col-2">
+            <span>Low</span>
+        </div>
+        <div class="col-2">
+            <span>Events</span>
+        </div>
+    </div>
+</div>
