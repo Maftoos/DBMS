@@ -1,0 +1,63 @@
+<div class="container">
+    <div style="background-color: #9B9B9B;" class="row p-4 m-2">
+        <div class="col-1 mt-3">
+            <span class="severity">Low</span>
+        </div>
+        <div class="col-8">
+            <div>
+                <span style="color: black; font-weight: bold; font-size: large;">Deadlock (extended event)</span>
+            </div>
+            <div>
+                <span style="color: #0115C5;">test01.smdem.local\demo</span>
+            </div>
+        </div>
+    </div>
+    <div class="row p-1 m-1">
+        <div class="col-2">
+            <span style="font-size: large;">Status : <strong>Event</strong></span>
+        </div>
+        <div class="col-4">
+            <span style="font-size: large;">Time raised : <strong>12 Apr 2021 10:56</strong></span>
+        </div>
+        <div class="col-2">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">Clear</button>
+                <button type="button" class="btn btn-secondary">Unclear</button>
+              </div>
+        </div>
+        <div class="col-2">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">Read</button>
+                <button type="button" class="btn btn-secondary">Unread</button>
+              </div>
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-secondary">Comment</button>
+        </div>
+    </div>
+    <div class="row p-1 m-1">
+        <div class="col-2">
+            <span style="color: #0115C5;"> < Alert Group Details</span>
+        </div>
+        <div class="col-2">
+            <span> ^ Newer in group</span>
+        </div>
+        <div class="col-2">
+            <span>Older in group</span>
+        </div>
+        <div class="col-6">
+            <span style="color: #0115C5; margin-left: 400px;"> Configure Alert</span>
+        </div>
+        <div class="row mt-3">
+            <div *ngIf="!toggle; else elseBlock" class="col-12">
+                <img style="margin-left: 7rem; width: 852px;"  (click)="changeToggle()" src="./assets/Deadlock.png">
+            </div>
+            <ng-template #elseBlock>
+                <div class="col-12">
+                    <img style="margin-left: 7rem; width: 852px;" (click)="changeToggle()" src="./assets/Deadlock-opened.png">
+                </div>
+            </ng-template>
+            
+        </div>
+    </div>
+</div>
