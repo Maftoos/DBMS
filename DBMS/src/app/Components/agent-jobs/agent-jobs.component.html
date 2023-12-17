@@ -1,0 +1,128 @@
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-12">
+            <span>Disk Usage</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>All groups</option>
+              </select>
+        </div>
+        <div class="col-3">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Filter</option>
+              </select>
+        </div>
+        <div class="col-3">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>All disks</option>
+              </select>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <span>Summery</span>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <p-chart type="line" [data]="data" [options]="options" [height]="'300px'" ></p-chart>
+        </div>
+        <div class="col-4">
+            <div>
+                <span>Estate Summary</span>
+            </div>
+            <div style="margin-top: 15px;">
+                <span>This is a summary of all the servers in your estate </span>
+            </div>
+            <div style="margin-top: 15px;">
+                <span style="font-weight: bold;">Current space used: </span>
+                <span>47.98 Tb (30%)</span>
+            </div>
+            <div style="margin-top: 15px;">
+                <span style="font-weight: bold;">Current capacity </span>
+                <span>160.73 Tb</span>
+            </div>
+            <div style="margin-top: 15px;">
+                <span style="font-weight: bold;">Projected space used in one year </span>
+                <span>172.82 Tb (108%)</span>
+            </div>
+            <div style="margin-top: 15px;">
+                <span style="font-weight: bold;">Projected change: </span>
+                <span>+124.89 Tb</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mt-1">
+        <span>Instances</span>
+    </div>
+    <div class="row mt-1">
+        <div class="col-2">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Show Groups
+                </label>
+              </div>
+        </div>
+        <div class="col-8">
+            
+        </div>
+        <div class="col-2">
+            <button class="btn btn-success">Export</button>
+        </div>
+    </div>
+    <div style="border-bottom: 1px solid black; background-color: #9B9B9B;" class="row mt-4 p-4">
+        <div class="col-2">
+            <span class="table-title">Server name</span>
+        </div>
+        <div class="col-1">
+            <span class="table-title">Disk</span>
+        </div>
+        <div class="col-1">
+            <span class="table-title">Space used</span>
+        </div>
+        <div class="col-1">
+            <span class="table-title">Capacity</span>
+        </div>
+        <div class="col-2">
+            <span class="table-title">Percentage used</span>
+        </div>
+        <div class="col-2">
+            <span class="table-title">Projected space used in one year</span>
+        </div>
+        <div class="col-1">
+            <span class="table-title">Projected change</span>
+        </div>
+        <div class="col-2">
+            <span class="table-title">Time until full</span>
+        </div>
+    </div>
+    <div *ngFor="let index of getLoopCount(4); let i = index" style="border-bottom: 1px solid black;" class="row mt-4 p-3">
+        <div class="col-2">
+            <span>ssc-db-n</span>
+        </div>
+        <div class="col-1">
+            <span>C:</span>
+        </div>
+        <div class="col-1">
+            <span>26.16 GB</span>
+        </div>
+        <div class="col-1">
+            <span >39.51 GB</span>
+        </div>
+        <div class="col-2">
+            <span >66%</span>
+        </div>
+        <div class="col-2">
+            <span>30.29 GB</span>
+        </div>
+        <div class="col-1">
+            <span>+4.10 GB</span>
+        </div>
+        <div class="col-2">
+            <span>1year</span>
+        </div>
+    </div>
+</div>

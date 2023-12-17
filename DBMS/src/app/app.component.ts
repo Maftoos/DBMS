@@ -18,6 +18,7 @@ import { AlertsMessagesComponent } from './Components/alerts-messages/alerts-mes
 import { AlertObjectsComponent } from './Components/alert-objects/alert-objects.component';
 import { DeadlockEventComponent } from './Components/deadlock-event/deadlock-event.component';
 import { InstalledVersionsComponent } from './Components/installed-versions/installed-versions.component';
+import { AgentJobsComponent } from './Components/agent-jobs/agent-jobs.component';
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -41,7 +42,8 @@ import { InstalledVersionsComponent } from './Components/installed-versions/inst
               AlertsMessagesComponent,
               AlertObjectsComponent,
               DeadlockEventComponent,
-              InstalledVersionsComponent
+              InstalledVersionsComponent,
+              AgentJobsComponent
              ]
     
 })
