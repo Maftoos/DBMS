@@ -15,9 +15,12 @@
   }
 .alert{
     background-color: #FFFFFF;
+    border-radius: 5px;
 }
 .serverGroup-container{
     background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 10px;
 }
 .serverGroup-title{
     font-size: large;
