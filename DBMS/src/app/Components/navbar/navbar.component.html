@@ -1,7 +1,7 @@
 <!-- first navbar -->
 <nav class="navbar navbar-expand-lg navbar-light navbar-main">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" routerLink="">
         <img class="navbar-logo" src="./assets/corelia-logo.png">
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -20,27 +20,45 @@
 <!-- second navbar -->
 <nav class="navbar navbar-expand-lg navbar-light navbar-side">
     <div class="container">
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse d-flex justify-content-between " id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" routerLink="overview">Overview</a>
+            <a class="nav-link" routerLink="">Overview</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Alert</a>
+            <a class="nav-link" routerLink="alert">Alert</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="analysis">Analysis</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Reports</a>
+            <a class="nav-link" routerLink="reports">Reports</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Estate</a>
-          </li>
+          <div class="dropdown">
+            <li class="nav-item dropbtn">
+              <a class="nav-link" routerLink="estate1">Estate</a>
+            </li>
+            <div class="dropdown-content">
+              <a routerLink="estate1"><img class="me-1" src="../../../assets/image/blueArrow.png" alt=""><img class="me-2" src="../../../assets/image/videoAnlysis.png" alt="">Installed Versions</a>
+              <a routerLink="estate2"><img class="me-1" src="../../../assets/image/blueArrow.png" alt=""><img class="me-2" src="../../../assets/image/videoAnlysis.png" alt="">Disk Usage</a>
+              <a routerLink="estate3"><img class="me-1" src="../../../assets/image/blueArrow.png" alt=""><img class="me-2" src="../../../assets/image/videoAnlysis.png" alt="">SQL Agent Jobs</a>
+              
+            </div>
+          </div>
           <li class="nav-item">
             <a class="nav-link" routerLink="configuration">Configuration</a>
           </li>
+         
         </ul>
+        <div class="d-flex  ">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="chatbot">
+                <button class="btn btn-success">What If?</button>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>

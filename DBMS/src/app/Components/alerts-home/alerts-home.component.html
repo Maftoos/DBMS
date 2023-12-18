@@ -1,64 +1,65 @@
-
-    <!--Main Navigation-->
-    <!-- Sidebar -->
+<div class="row">
+  <div class="col-1">
     <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
-        <div class="position-sticky">
-          <div class="list-group list-group-flush mx-3">
-              <a class="list-group-item  py-2 ripple ">
-          <span style="font-size: large; font-weight: bold;">Global Filters</span>
-                </a>
-            <a class="list-group-item list-group-item-action py-2 ripple ">
-              <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">All Alerts</span>
-            </a>
-            <a class="list-group-item list-group-item-action py-2 ripple ">
-              <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">Unread</span>
-            </a>
-            <a class="list-group-item list-group-item-action py-2 ripple ">
-              <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">Active</span>
-            </a>
-            <a class="list-group-item list-group-item-action py-2 ripple ">
-              <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">Cleared</span>
-            </a>
-  
+      <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3">
             <a class="list-group-item  py-2 ripple ">
-              <span style="font-size: large; font-weight: bold;">Monitored servers</span>
-                    </a>
-                    <a class="list-group-item list-group-item-action py-2 ripple ">
-                      <img style="width: 12rem;" src="./assets/filetree.png">
-                    </a>
-              
-            <a class="list-group-item  py-2 ripple ">
-              <span style="font-size: large; font-weight: bold;">Actions</span>
-                    </a>
-                <a class="list-group-item list-group-item-action py-2 ripple ">
-                  <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">Create Custom Metrics</span>
-                </a>
-                <a class="list-group-item list-group-item-action py-2 ripple ">
-                  <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">Manage serves</span>
-                </a>
-                <a class="list-group-item list-group-item-action py-2 ripple ">
-                  <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">Manage groups</span>
-                </a>
-                <a class="list-group-item list-group-item-action py-2 ripple ">
-                  <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">Configure alerts</span>
-                </a>
-                <a class="list-group-item list-group-item-action py-2 ripple ">
-                  <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">alert suppression</span>
-                </a>
-                <a class="list-group-item list-group-item-action py-2 ripple ">
-                  <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">Subscribe to RSS </span>
-                </a>
-          </div>
+        <span style="font-size: large; font-weight: bold;">Global Filters</span>
+              </a>
+          <a class="list-group-item list-group-item-action py-2 ripple " routerLink="/alert">
+            <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;" >All Alerts</span>
+          </a>
+          <a class="list-group-item list-group-item-action py-2 ripple " routerLink="/alert/messages">
+            <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">Unread</span>
+          </a>
+          <a class="list-group-item list-group-item-action py-2 ripple " routerLink="/alert/objects">
+            <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">Active</span>
+          </a>
+          <a class="list-group-item list-group-item-action py-2 ripple ">
+            <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">Cleared</span>
+          </a>
+
+          <a class="list-group-item  py-2 ripple ">
+            <span style="font-size: large; font-weight: bold;">Monitored servers</span>
+                  </a>
+                  <a class="list-group-item list-group-item-action py-2 ripple " routerLink="/alert/databases">
+                    <img  style="width: 12rem;" src="./assets/filetree.png">
+                  </a>
+            
+          <a class="list-group-item  py-2 ripple ">
+            <span style="font-size: large; font-weight: bold;">Actions</span>
+                  </a>
+              <a class="list-group-item list-group-item-action py-2 ripple ">
+                <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">Create Custom Metrics</span>
+              </a>
+              <a class="list-group-item list-group-item-action py-2 ripple ">
+                <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">Manage serves</span>
+              </a>
+              <a class="list-group-item list-group-item-action py-2 ripple ">
+                <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">Manage groups</span>
+              </a>
+              <a class="list-group-item list-group-item-action py-2 ripple ">
+                <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">Configure alerts</span>
+              </a>
+              <a class="list-group-item list-group-item-action py-2 ripple ">
+                <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">alert suppression</span>
+              </a>
+              <a class="list-group-item list-group-item-action py-2 ripple ">
+                <i class="fas fa-chart-area fa-fw me-3"></i><span style="color: #374AF9;">Subscribe to RSS </span>
+              </a>
         </div>
-      </nav>
-      <!-- Sidebar -->
-    <!--Main Navigation-->
-    
-    <!--Main layout-->
-    <main >
-      <div class="container pt-4">
-          <!-- <app-alert-databases></app-alert-databases> -->
-          <app-alerts-messages></app-alerts-messages>
       </div>
-    </main>
-    <!--Main layout-->
+    </nav>
+  </div>
+<div class="col-9">
+  <main >
+    <div class="container pt-4">
+        <app-alert-databases></app-alert-databases>
+        <!-- <app-alerts-messages></app-alerts-messages> -->
+        <!-- <app-alert-objects></app-alert-objects> -->
+        <!-- <app-deadlock-event></app-deadlock-event> -->
+        <!-- <router-outlet></router-outlet> -->
+    </div>
+  </main>
+</div>
+</div>

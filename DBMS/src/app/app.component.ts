@@ -20,6 +20,7 @@ import { DeadlockEventComponent } from './Components/deadlock-event/deadlock-eve
 import { InstalledVersionsComponent } from './Components/installed-versions/installed-versions.component';
 import { AgentJobsComponent } from './Components/agent-jobs/agent-jobs.component';
 import { DiskUsageComponent } from './Components/disk-usage/disk-usage.component';
+
 @Component({
     selector: 'app-root',
     standalone: true,

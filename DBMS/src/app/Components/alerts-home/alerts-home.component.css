@@ -7,7 +7,7 @@
   
   /* Sidebar */
   .sidebar {
-    position: fixed;
+    position: relative;
     overflow-y: auto;
     top: 0;
     bottom: 0;

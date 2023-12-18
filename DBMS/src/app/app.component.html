@@ -2,7 +2,7 @@
 <!-- <app-sidebar></app-sidebar> -->
 <!-- <app-overview></app-overview> -->
 <!-- <app-analysis></app-analysis> -->
-<!-- <app-management></app-management> -->
+
 <!-- <app-chat></app-chat> -->
 <!-- <app-configuration></app-configuration> -->
 <!-- <app-data-settings></app-data-settings> -->
@@ -16,8 +16,14 @@
 <!-- <app-agent-jobs></app-agent-jobs> -->
 <!-- <app-disk-usage></app-disk-usage> -->
 <body>
+    <app-navbar></app-navbar>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+
     <!-- <app-login-page></app-login-page> -->
-    <app-home></app-home>
+    <!-- <app-home></app-home> -->
+    <!-- <app-management></app-management> -->
     <!-- <app-chat></app-chat> -->
     <!-- <app-alert-databases></app-alert-databases> -->
 </body>
